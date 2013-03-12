@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+LIBDIR=/var/lib/xmpp-share-server
+LOGFILE=/var/log/xmpp-share-server.log
+
+case "$1" in
+purge)
+    rm -f $LOGFILE
+    rm -rf $LIBDIR
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

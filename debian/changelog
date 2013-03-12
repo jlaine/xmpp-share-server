@@ -1,0 +1,180 @@
+xmpp-share-server (0.8.10-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Tue, 28 Aug 2012 17:26:01 +0200
+
+xmpp-share-server (0.8.9-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Thu, 17 Jul 2012 13:17:12 +0200
+
+xmpp-share-server (0.8.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove Build-Depends on libmemcached-dev.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Thu, 03 May 2012 15:58:10 +0200
+
+xmpp-share-server (0.7.7-2) unstable; urgency=low
+
+  * Add a "status" action to init scripts.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Mon, 23 Jan 2012 17:01:44 +0100
+
+xmpp-share-server (0.7.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Split xmpp-share-client into its own package.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Thu, 15 Sep 2011 15:35:12 +0200
+
+xmpp-share-server (0.7.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Thu, 08 Sep 2011 17:51:20 +0200
+
+xmpp-share-server (0.7.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add support for log rotation.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Tue, 06 Sep 2011 11:11:45 +0200
+
+xmpp-share-server (0.7.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Wed, 31 Aug 2011 14:42:01 +0200
+
+xmpp-share-server (0.7.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Tue, 30 Aug 2011 17:46:27 +0200
+
+xmpp-share-server (0.7.2-3) unstable; urgency=low
+
+  * Bump package version.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Thu, 25 Aug 2011 12:58:54 +0200
+
+xmpp-share-server (0.7.2-2) unstable; urgency=low
+
+  * Package xmpp-share-tool.
+  * Add Build-Depends on libmemcached-dev.
+  * Add Depends on libqt4-sql-sqlite.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Thu, 25 Aug 2011 11:41:26 +0200
+
+xmpp-share-server (0.7.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Laine <jeremy.laine@bolloretelecom.eu>  Wed, 20 Jul 2011 16:25:15 +0200
+
+xmpp-share-server (0.7.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Raise limit on number of open files in init script.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Tue, 28 Jun 2011 15:25:02 +0200
+
+xmpp-share-server (0.6.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Mon, 08 Nov 2010 12:43:45 +0100
+
+xmpp-share-server (0.6.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Mon, 29 Sep 2010 17:23:08 +0200
+
+xmpp-share-server (0.6.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Mon, 14 Sep 2010 11:39:53 +0200
+
+xmpp-share-server (0.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Wed,  1 Sep 2010 14:44:17 +0000
+
+xmpp-share-server (0.5.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Wed, 18 Aug 2010 08:04:19 +0200
+
+xmpp-share-server (0.5.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Mon, 26 Jul 2010 17:11:05 +0200
+
+xmpp-share-server (0.5.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Mon, 26 Jul 2010 10:22:14 +0200
+
+xmpp-share-server (0.4.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Tue, 15 Jun 2010 16:13:45 +0200
+
+xmpp-share-server (0.4.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Mon, 31 May 2010 10:48:05 +0200
+
+xmpp-share-server (0.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Tue, 25 May 2010 18:53:03 +0200
+
+xmpp-share-server (0.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Fri, 21 May 2010 11:56:39 +0200
+
+xmpp-share-server (0.3.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Tue, 18 May 2010 18:45:34 +0200
+
+xmpp-share-server (0.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add logrotate configuration file.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Tue, 11 May 2010 17:34:30 +0200
+
+xmpp-share-server (0.3.0-3) unstable; urgency=low
+
+  * Add some debug code.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Fri, 07 May 2010 18:43:59 +0200
+
+xmpp-share-server (0.3.0-2) unstable; urgency=low
+
+  * Drop dependency on psmisc.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Fri, 07 May 2010 15:56:27 +0200
+
+xmpp-share-server (0.3.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Jeremy Lainé <jeremy.laine@bolloretelecom.eu>  Thu, 29 Apr 2010 15:57:24 +0200

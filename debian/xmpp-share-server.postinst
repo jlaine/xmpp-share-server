@@ -1,0 +1,31 @@
+#!/bin/sh -e
+
+CUSER=xmpp-share-server
+LIBDIR=/var/lib/xmpp-share-server
+LOGFILE=/var/log/xmpp-share-server.log
+
+# Add the xmpp-share-server user
+if !(getent passwd ${CUSER}>/dev/null); then
+    adduser --system \
+        --disabled-login \
+        --disabled-password \
+        --shell /bin/false \
+        --home ${LIBDIR} ${CUSER}
+    chown $CUSER $LIBDIR
+fi
+
+# Create lib dir
+if [ ! -e "$LIBDIR" ]; then
+    mkdir $LIBDIR
+    chown $CUSER $LIBDIR
+fi
+
+# Create log file
+if [ ! -e "$LOGFILE" ]; then
+    touch $LOGFILE
+    chown $CUSER $LOGFILE
+fi
+
+#DEBHELPER#
+
+exit 0

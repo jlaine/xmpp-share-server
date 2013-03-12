@@ -1,0 +1,8 @@
+# Defaults for xmpp-share-server
+
+# Allow core dumps
+ulimit -c unlimited
+
+# Raise limit on number of open files
+ulimit -n 16384
+

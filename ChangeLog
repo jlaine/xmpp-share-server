@@ -1,0 +1,89 @@
+xmpp-share-server 0.8.0 (UNRELEASED)
+ * start using shared libraries.
+ * expose incoming client statistics.
+
+xmpp-share-server 0.7.7 (2012-01-23)
+  * share_client: split share client into its process.
+
+xmpp-share-server 0.7.6 (2011-10-08)
+ * QXmppServer: add initial multithreading.
+
+xmpp-share-server 0.7.5 (2011-10-06)
+ * QXmppServer: make it possible to reload some settings.
+ * QXmppServer: improve client routing scalability.
+
+xmpp-share-server 0.7.4 (2011-09-31)
+ * mod_http: allow cross-domain requests on static files.
+
+xmpp-share-server 0.7.3 (2011-09-30)
+ * mod_http: add support for serving static files.
+
+xmpp-share-server 0.7.2 (2011-07-20)
+ * mod_archive: add support for collection removal.
+ * mod_http: add request / response logging.
+
+xmpp-share-server 0.7.1 (2011-06-28)
+ * Update QXmpp to catch errors on outgoing S2S connections.
+ * mod_share: report total size for share clients.
+
+xmpp-share-server 0.7.0 (2011-02-23)
+ * Update QXmpp to fix server-to-server dialback support.
+ * mod_archive: add a module for message archiving and offline messages.
+ * mod_bosh: add a module for Bidirectional-streams Over Synchronous HTTP.
+ * mod_muc: add a module for multi-user chat.
+ * mod_private: add a module for private XML storage.
+ * mod_proxy65: improve logging and transfer termination.
+ * mod_roster: correct local-to-local subscription requests.
+
+xmpp-share-server 0.6.4 (2010-11-08)
+ * Add finer control over the log level.
+ * mod_diag: add a module for diagnostics reporting.
+
+xmpp-share-server 0.6.3 (2010-09-29)
+ * Use new URL for authentication.
+ * Send a user agent when performing authentication.
+
+xmpp-share-server 0.6.2 (2010-09-14)
+ * Update QXmpp to correctly handle presence elements with multiple extensions.
+ * Update QXmpp to fix combined prefix + filter share searches.
+ * Make it possible to specify the log level in the configuration file.
+ * mod_share: add timeout for forwarded search requests.
+
+xmpp-share-server 0.6.0 (2010-09-01)
+ * Use QXmppServer as provided by QXmpp.
+ * mod_share: give peers a minute before exploring them.
+ * mod_share: re-explore peers every 3 hours.
+ * mod_proxy65: add statistics for files/bytes transfered per hour.
+
+xmpp-share-server 0.5.3 (2010-08-18)
+ * Add support for certificate chains.
+
+xmpp-share-server 0.5.2 (2010-07-26)
+ * Update QDjango to fix memory leak in database connection.
+
+xmpp-share-server 0.5.0 (2010-07-26)
+ * Update QXmpp to fix potential crashes.
+ * Add a sleep to make "restart" on init script work.
+ * Add proper authentication.
+
+xmpp-share-server 0.4.3 (2010-06-15)
+ * Fix discovery response IQ type so share server discovery always works.
+ * Display total share size in the share peer list.
+ * List share peers by decreasing share size.
+ * Report number of available bytes and files in statistics.
+
+xmpp-share-server 0.4.2 (2010-05-31)
+ * Report maximum / minimum / average transfer speeds in statistics.
+
+xmpp-share-server 0.4.1 (2010-05-25)
+ * Update QDjango to avoid double SQL query execution.
+ * Make it possible to pass a host name for SOCKS5 server.
+
+xmpp-share-server 0.4.0 (2010-05-21)
+ * Add xmpp-share-client.
+
+xmpp-share-server 0.3.2 (2010-05-18)
+ * Report version in statistics.
+
+xmpp-share-server 0.3.1 (2010-05-12)
+ * Add support for statistics.

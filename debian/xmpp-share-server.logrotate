@@ -1,0 +1,12 @@
+/var/log/xmpp-share-server.log {
+    daily
+    rotate 7
+    compress
+    missingok
+    notifempty
+    create 644 xmpp-share-server root
+    sharedscripts
+    postrotate
+        invoke-rc.d --quiet xmpp-share-server reload > /dev/null
+    endscript
+}

@@ -1,0 +1,32 @@
+[General]
+logfile=/var/log/xmpp-share-server.log
+statistics-file=/var/lib/xmpp-share-server/statistics
+
+[share-client]
+jid=shares@example.com/xmpp-share-client
+password=bogus
+directory=/var/lib/xmpp-share-server/shares
+
+[share-server]
+jid=shares@example.com/xmpp-share-server
+password=bogus
+
+# If you want to restrict access to given peers,
+# set the following variable.
+#allowed-peers=foo@example.com, bar@example.com
+
+# If you want to force clients to use the SOCKS5 proxy,
+# set the following to 1.
+#force-proxy=1
+
+[socks-proxy]
+jid=bytestreams@example.com/xmpp-share-server
+password=bogus
+host=10.10.10.1
+port=7777
+
+[xmpp-server]
+domain=example.com
+discovery-items=shares@example.com/xmpp-share-server, bytestreams@example.com/xmpp-share-server
+ssl-certificate=dovecot.pem
+ssl-key=dovecot.key
