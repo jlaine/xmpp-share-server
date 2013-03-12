@@ -1,0 +1,3 @@
+[submodule "src/qxmpp-extra"]
+	path = src/qxmpp-extra
+	url = https://github.com/jlaine/qxmpp-extra.git
