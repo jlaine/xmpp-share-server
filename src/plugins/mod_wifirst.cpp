@@ -253,7 +253,10 @@ void XmppServerWifirst::processQueue()
 
     // finished
     info(QString("Finished processing jobs %1").arg(m_batchUrl.toString()));
-    QNetworkReply *reply = m_network->post(QNetworkRequest(m_batchUrl), "_method=delete");
+
+    QNetworkRequest networkRequest(m_batchUrl);
+    networkRequest.setRawHeader("Content-Type", "application/x-www-form-urlencoded");
+    QNetworkReply *reply = m_network->post(networkRequest, "_method=delete");
     connect(reply, SIGNAL(finished()), reply, SLOT(deleteLater()));
     m_batchUrl.clear();
 

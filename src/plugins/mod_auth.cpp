@@ -244,6 +244,7 @@ QXmppPasswordReply *XmppPasswordChecker::getDigest(const QXmppPasswordRequest &r
 
     if (d->backend == HttpBackend && d->url.isValid()) {
         QNetworkRequest networkRequest(d->url.toString());
+        networkRequest.setRawHeader("Content-Type", "application/x-www-form-urlencoded");
         networkRequest.setRawHeader("User-Agent", QString(qApp->applicationName() + "/" + qApp->applicationVersion()).toAscii());
         QUrl url;
         url.addQueryItem("username", request.username());
