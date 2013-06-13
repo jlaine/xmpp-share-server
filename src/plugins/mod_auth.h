@@ -53,8 +53,6 @@ class XmppPasswordChecker : public QXmppServerExtension, QXmppPasswordChecker
     Q_PROPERTY(QString url READ url WRITE setUrl);
     Q_PROPERTY(QString user READ user WRITE setUser);
     Q_PROPERTY(QString password READ password WRITE setPassword);
-    Q_PROPERTY(QString searchBase READ searchBase WRITE setSearchBase);
-    Q_PROPERTY(QString searchPattern READ searchPattern WRITE setSearchPattern);
 
 public:
     XmppPasswordChecker();
@@ -68,12 +66,6 @@ public:
 
     QString password() const;
     void setPassword(const QString &password);
-
-    QString searchBase() const;
-    void setSearchBase(const QString &searchBase);
- 
-    QString searchPattern() const;
-    void setSearchPattern(const QString &searchPattern);
 
     // password checker
     QXmppPasswordReply *checkPassword(const QXmppPasswordRequest &request);

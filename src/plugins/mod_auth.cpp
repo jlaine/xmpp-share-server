@@ -122,8 +122,6 @@ public:
     QUrl url;
     QString user;
     QString password;
-    QString searchBase;
-    QString searchPattern;
     QSettings *settings;
     QSqlDatabase sqlDatabase;
     QString sqlGetQuery;
@@ -372,26 +370,6 @@ QString XmppPasswordChecker::password() const
 void XmppPasswordChecker::setPassword(const QString &password)
 {
     d->password = password;
-}
-
-QString XmppPasswordChecker::searchBase() const
-{
-    return d->searchBase;
-}
-
-void XmppPasswordChecker::setSearchBase(const QString &searchBase)
-{
-    d->searchBase = searchBase;
-}
-
-QString XmppPasswordChecker::searchPattern() const
-{
-    return d->searchPattern;
-}
-
-void XmppPasswordChecker::setSearchPattern(const QString &searchPattern)
-{
-    d->searchPattern = searchPattern;
 }
 
 /** Returns the URL for the password source.
