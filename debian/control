@@ -8,7 +8,6 @@ Build-Depends: debhelper (>= 8), cmake, pkg-config, libqdjango-dev, libqt4-dev, 
 Package: xmpp-share-server
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-sql-sqlite
-Suggests: xmpp-share-tool
 Description: XMPP chat and file sharing server
  xmpp-share-server is an XMPP chat server which also provides support for
  file sharing.
