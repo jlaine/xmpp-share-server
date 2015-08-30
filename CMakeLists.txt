@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8.6)
+set(CMAKE_AUTOMOC ON)
 
 # Project and version
 project(xmpp-share-server)
