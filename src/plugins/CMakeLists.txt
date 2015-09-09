@@ -54,9 +54,6 @@ target_link_libraries(mod_proxy65 qxmpp ${QT_LIBRARIES})
 add_library(mod_roster SHARED mod_roster.cpp)
 target_link_libraries(mod_roster mod_presence qdjango-db ${QT_LIBRARIES})
 
-add_library(mod_share SHARED mod_share.cpp)
-target_link_libraries(mod_share qxmpp qxmpp-extra ${QT_LIBRARIES})
-
 add_library(mod_stat SHARED mod_stat.cpp)
 target_link_libraries(mod_stat mod_roster qdjango-http qxmpp ${QT_LIBRARIES})
 
