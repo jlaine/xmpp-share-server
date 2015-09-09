@@ -1,8 +1,4 @@
-set(QT_DONT_USE_QTGUI 1)
-set(QT_USE_QTNETWORK 1)
-set(QT_USE_QTSQL 1)
-set(QT_USE_QTXML 1)
-include(${QT_USE_FILE})
+set(QT_LIBRARIES Qt5::Network Qt5::Sql Qt5::Xml)
 
 # needed for win32
 add_definitions(-DQT_PLUGIN)

@@ -132,8 +132,9 @@ void XmppLogger::readSettings()
     reopen();
 }
 
-static void log_handler(QtMsgType type, const char *msg)
+static void log_handler(QtMsgType type, const QMessageLogContext &context, const QString &msg)
 {
+    Q_UNUSED(context);
     switch (type) {
     case QtDebugMsg:
         logger->log(QXmppLogger::DebugMessage, msg);
@@ -381,7 +382,7 @@ int main(int argc, char *argv[])
 
     /* Set up logging */
     logger = new XmppLogger;
-    qInstallMsgHandler(log_handler);
+    qInstallMessageHandler(log_handler);
     logger->readSettings();
     logger->log(QXmppLogger::InformationMessage, QString("Starting version %1").arg(qApp->applicationVersion()));
 
@@ -421,7 +422,7 @@ int main(int argc, char *argv[])
         const QString name = extension->extensionName();
         settings->beginGroup(name);
         foreach (const QString &key, settings->childKeys())
-            extension->setProperty(key.toAscii(), settings->value(key));
+            extension->setProperty(key.toLatin1(), settings->value(key));
         settings->endGroup();
     }
 

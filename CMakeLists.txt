@@ -1,5 +1,6 @@
-cmake_minimum_required(VERSION 2.8.6)
+cmake_minimum_required(VERSION 3.0.0)
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 # Project and version
 project(xmpp-share-server)
@@ -11,7 +12,10 @@ set(SERVER_PLUGIN_DIR lib/xmpp-share-server)
 configure_file(${CMAKE_SOURCE_DIR}/src/config.h.in ${CMAKE_BINARY_DIR}/src/config.h)
 
 # Required
-find_package(Qt4 REQUIRED)
+find_package(Qt5DBus REQUIRED)
+find_package(Qt5Network REQUIRED)
+find_package(Qt5Sql REQUIRED)
+find_package(Qt5Xml REQUIRED)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(QDJANGO qdjango-db qdjango-http REQUIRED)
 pkg_check_modules(QXMPP qxmpp REQUIRED)
