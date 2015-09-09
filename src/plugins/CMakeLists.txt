@@ -87,7 +87,6 @@ install(FILES
     mod_private.pluginspec
     mod_proxy65.pluginspec
     mod_roster.pluginspec
-    mod_share.pluginspec
     mod_stat.pluginspec
     mod_time.pluginspec
     mod_turn.pluginspec
@@ -111,7 +110,6 @@ install(TARGETS
     mod_private
     mod_proxy65
     mod_roster
-    mod_share
     mod_stat
     mod_time
     mod_turn
